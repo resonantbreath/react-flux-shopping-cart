@@ -1,0 +1,18 @@
+rails:
+  build: .
+  ports:
+    - "3000:3000"
+    - "3100:22"
+  links:
+    - db
+  environment:
+    PASSENGER_APP_ENV: development
+    POSTGRESQL_ENV_POSTGRES_PASSWORD: 123hotdogs
+    POSTGRESQL_ENV_POSTGRES_USER: hello
+db:
+  image: postgres:9.4.1
+  ports:
+      - "5432"
+  environment:
+    POSTGRES_PASSWORD: 123hotdogs
+    POSTGRES_USER: hello

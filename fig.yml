@@ -1,0 +1,9 @@
+hellorails:
+  build: .
+  ports:
+    - "3000:3000"
+    - "3100:22"
+  environment:
+    PASSENGER_APP_ENV: development
+  volumes:
+    - ./hello:./home/app/hello
