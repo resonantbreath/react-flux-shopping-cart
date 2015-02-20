@@ -7,9 +7,22 @@
 # Ignore bundler config.
 /.bundle
 
-Gemfile.lock
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
 
-# Ignore the default SQLite database.
+# Ignormlisation:
+# /.bundle
+# /vendor/bundlethe default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
