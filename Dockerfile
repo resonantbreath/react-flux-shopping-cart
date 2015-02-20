@@ -69,8 +69,6 @@ WORKDIR /home/app
 ADD hello/Gemfile ./
 RUN bundle install
 
-RUN chown -R app:app hello
-
 # Sample docker file, mysql is the example login.
 RUN usermod -u 1000 app
 
