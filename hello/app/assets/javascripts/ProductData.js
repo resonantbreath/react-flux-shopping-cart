@@ -14,7 +14,6 @@ module.exports = {
             type: '40oz Bottle',
             price: 4.99,
             inventory: 1
-
           },
           {
             sku: '123124',

@@ -1,2 +1,3 @@
 .DS_Store
 node_modules
+hello/app/assets/javascripts/app.js
